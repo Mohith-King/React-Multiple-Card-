@@ -1,16 +1,72 @@
-# React + Vite
+# React Multiple Card Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React + Vite project that displays a collection of job cards in a clean, responsive layout. Each card is built with a reusable `Card` component and rendered from a list of job opening data.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Reusable job card component
+- Multiple company listings rendered with `.map()`
+- Bookmark and apply button UI
+- Responsive wrapped card layout
+- Clean dark background with card-based design
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- Lucide React icons
+- Plain CSS
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+  App.jsx
+  App.css
+  index.css
+  main.jsx
+  component/
+    Card.jsx
+  Props/
+    Dishes.jsx
+    Restaurant.jsx
+    PropsDrilling/
+      BranchHead.jsx
+      Management.jsx
+      Student.jsx
+      Trainer.jsx
+  assets/
+```
+
+## Getting Started
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Build the project for production:
+
+   ```bash
+   npm run build
+   ```
+
+4. Preview the production build:
+
+   ```bash
+   npm run preview
+   ```
+
+## Notes
+
+- The job listings are currently static sample data inside `src/App.jsx`.
+- The card layout and styling are controlled in `src/App.css` and `src/component/Card.jsx`.
+- You can replace the sample data with API data later without changing the overall component structure.
+
